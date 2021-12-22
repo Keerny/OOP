@@ -10,31 +10,27 @@ class application {
     }
 
     generateTiles() {
-        for (let cubeCounter = 0; cubeCounter < 49; cubeCounter++) {
+        for (let cubeCounter = 0; cubeCounter < 100; cubeCounter++) {
             let cube = new Cube(cubeCounter, this.ctx);
             this.cube.push(cube);
         }
     }
+
+    animate() {
+        this.ctx.clearRect(0,0, this.ctx.canvas.width, this.ctx.canvas.height);
+
+        for (let i = 0; i < 100; i++) {
+            this.cube[i].update(i);
+            this.cube[i].drow();
+        }
+        requestAnimationFrame(() => this.animate());
+    }
+
     run() {
         this.generateTiles();
-        for (let i = 1; i < 49; i++) {
-            let Cube = this.cube[i];
-            console.log(i)
-            Cube.drow();
-            if (i % 8 != 0) {
-                this.ctx.x += 80;
-            }
-            else {
-                this.ctx.y += 150;
-                this.ctx.x -= 560;
-            }
-        }
+        this.animate();
     }
 }
 
-class animation {
-    
-}
 new application().run();
-
 console.log("hello")
