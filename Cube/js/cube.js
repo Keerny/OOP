@@ -32,7 +32,7 @@ class Cube {
             this.ctx.x += 80;
         }
     }
-
+/asdasdasd
     drow() {
         this.agle += 0.05
         this.ctx.save();
