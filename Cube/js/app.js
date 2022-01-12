@@ -19,7 +19,7 @@ class application {
     animate() {
         this.ctx.clearRect(0,0, this.ctx.canvas.width, this.ctx.canvas.height);
 
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 60; i++) {
             this.cube[i].update(i);
             this.cube[i].drow();
         }
