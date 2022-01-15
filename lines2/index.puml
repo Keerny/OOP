@@ -1,0 +1,23 @@
+@startuml
+skinparam dpi 150
+
+abstract class application {
+    -CanvasRenderingContext2D ctx
+    +constructor()
+    ---
+    +generateLines()
+    +show()
+    +run()
+}
+class Lines {
+    -CanvasRenderingContext2D ctx
+    -y_old
+    -x_old
+    +constructor()
+---
+    +draw()
+}
+
+application "m" *-- "1" Lines: "включает/содержит"
+
+@enduml
