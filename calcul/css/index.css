@@ -1,0 +1,42 @@
+body {
+    background-size: cover;
+    background-color: deeppink;
+}
+input {
+    width: 15%;
+    padding: 8px 8px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    color: darkblue;
+    font-size: 24px;
+    font-family: "Times New Roman";
+    background: darkgrey;
+}
+h3 {
+    font-size: xxx-large;
+    text-align: center;
+    color: aqua;
+    font-family: "Times New Roman";
+}
+button {
+    font-size: xxx-large;
+    color: darkblue;
+    font-family: "Times New Roman";
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5%;
+    width: 15%;
+    background: darkgrey;
+}
+.square1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 100px;
+}
+
+
